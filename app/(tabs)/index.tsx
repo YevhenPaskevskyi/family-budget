@@ -11,10 +11,10 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <View style={{ padding: 50, alignItems: 'center' }}>
-        <Text style={{ fontSize: 22, marginBottom: 100 }}>Balance: {balance}</Text>
-        <Text style={{ fontSize: 22, marginBottom: 100 }}>Income: {income}</Text>
-        <Text style={{ fontSize: 22, marginBottom: 100 }}>Expense: {expence}</Text>
+      <View style={{ padding: 130, alignItems: 'center' }}>
+        <Text style={{ fontSize: 22, marginBottom: 30,backgroundColor: '#47D7C4' }}>BALANCE: {balance}</Text>
+        <Text style={{ fontSize: 22, marginBottom: 30,backgroundColor: '#47D7C4' }}>Income: {income}</Text>
+        <Text style={{ fontSize: 22, marginBottom: 30,backgroundColor: '#47D7C4' }}>Expence: {expence}</Text>
 
         <Pressable
           onPress={() => addIncome(100)}
@@ -22,7 +22,7 @@ export default function HomeScreen() {
             backgroundColor: '#0EA051',
             padding: 16,
             borderRadius: 12,
-            marginBottom: 12,
+            marginBottom: 30,
             alignItems: 'center',
           }}
         >
@@ -32,7 +32,7 @@ export default function HomeScreen() {
         </Pressable>
 
         <Pressable
-          onPress={() => addExpense(50)}
+          onPress={() => addExpense(100)}
           style={{
             backgroundColor: '#810EFC',
             padding: 16,
